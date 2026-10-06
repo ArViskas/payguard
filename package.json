@@ -1,0 +1,21 @@
+{
+  "name": "payguard",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "author": "Arvydas Kostinas",
+  "type": "module",
+  "description": "A sandbox-only authorization gateway for agent payment intents",
+  "engines": {
+    "node": ">=20.9"
+  },
+  "scripts": {
+    "start": "node scripts/start.mjs",
+    "verify:paypal": "node scripts/verify-paypal.mjs",
+    "verify:payout": "node scripts/verify-payout.mjs",
+    "verify:ai": "node scripts/verify-ai.mjs",
+    "test": "node --test test/*.test.mjs",
+    "check": "node scripts/check.mjs",
+    "package:release": "node scripts/package-release.mjs"
+  }
+}
